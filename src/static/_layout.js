@@ -1,4 +1,8 @@
-function Layout(title, headBox, body) {
+function Layout(components) {
+  const title = (components.title != undefined) ? components.title : ''
+  const headBox = (components.head != undefined) ? components.head : ''
+  const body = (components.body != undefined) ? components.body : ''
+
   return html = `<!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +12,7 @@ function Layout(title, headBox, body) {
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>${title}</title>
 
+   <link rel="stylesheet" href="/css/main"> 
     ${headBox}
   </head>
 
