@@ -1,0 +1,16 @@
+#footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#footer a {
+  color: whitesmoke;
+  transition: all .3s;
+}
+
+#footer a:hover {
+  opacity: .6;
+  text-decoration: none;
+}
