@@ -1,6 +1,12 @@
 function pageRun(route, root) {
-  route.get('/', (req, res) => {
-    res.sendFile(root + '/static/landing/index.html')
+  // CSS Route
+  route.get('/css/main', (req, res) => {
+    res.sendFile(root + '/styles/main.css')
+  })
+
+  // CSS Components
+  route.get('/css/components/footer', (req, res) => {
+    res.sendFile(root + '/styles/components/footer.css')
   })
 }
 
