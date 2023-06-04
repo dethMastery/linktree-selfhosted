@@ -1,0 +1,68 @@
+.mainScreen {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainScreen .container {
+  width: 80%;
+  height: 100%;
+
+  color: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.mainScreen .container .dataContainer {
+  margin-left: 2rem;
+}
+
+.lottiesContainer {
+  width: 30rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.lottiesContainer > lottie-player {
+  width: 30rem;
+  height: 30rem;
+  margin-left: 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainScreen {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .mainScreen .container {
+    width: 100%;
+
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mainScreen .container .dataContainer {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .lottiesContainer {
+    width: 100%;
+  }
+
+  .lottiesContainer > lottie-player {
+    width: 30rem;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:100,200,300,regular,500,600,700);
+@import url(/css/components/navBar);
+@import url(/css/components/footer);
+
+* {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #2e2f2f;
+}
+
+.big-heading {
+  width: 100%;
+  height: 100vh;
+}
