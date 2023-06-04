@@ -1,0 +1,32 @@
+#navBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#navBar .left {
+  width: auto;
+  justify-content: start;
+}
+
+#navBar .right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#navBar a {
+  display: block;
+  padding: 1rem;
+
+  color: whitesmoke;
+  text-decoration: none;
+
+  transition: all .3s;
+}
+
+#navBar a:hover {
+  opacity: .6;
+  transform: scale(.95, .95);
+}
