@@ -1,17 +1,9 @@
-const staticPage = require("./staticPage")
+const cssRouter = require("./router/css/cssRouter")
+const staticPage = require("./router/page/pageRouter")
 
 function pageRun(route, root) {
   staticPage(route, root)
-
-  // CSS Route
-  route.get('/css/main', (req, res) => {
-    res.sendFile(root + '/styles/main.css')
-  })
-
-  // CSS Components
-  route.get('/css/components/footer', (req, res) => {
-    res.sendFile(root + '/styles/components/footer.css')
-  })
+  cssRouter(route, root)
 }
 
 module.exports = {
