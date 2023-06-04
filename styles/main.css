@@ -36,3 +36,8 @@ body {
 .btn:hover {
   transform: scale(.95, .95);
 }
+
+.parent {
+  width: 100%;
+  min-height: 100vh;
+}
