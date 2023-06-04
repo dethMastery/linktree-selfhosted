@@ -3,6 +3,11 @@ function cssRouter(route, root) {
     res.sendFile(root + '/styles/main.css')
   })
 
+  // Pages
+  route.get('/css/pages/index', (req, res) => {
+    res.sendFile(root + '/styles/pages/index.css')
+  })
+
   // Components
   route.get('/css/components/navbar', (req, res) => {
     res.sendFile(root + '/styles/components/navBar.css')
