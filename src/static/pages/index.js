@@ -15,6 +15,11 @@ const body = `<!-- Top Heading -->
       <p>
         Like "LinkTree" but can selfhosted by yourself :)
       </p>
+      <div>
+        <a href="/register" class="btn" style="background-color: aquamarine; color: #2e2f2f;">
+          Get Started >
+        </a>
+      </div>
     </div>
   </div>
   <div class="lottiesContainer">
@@ -22,8 +27,20 @@ const body = `<!-- Top Heading -->
   </div>
 </div>
 
-<!-- Navigator bar Component -->
-${NavBar}
+<!-- Parent Container -->
+<div class="control-parent">
+  <!-- Navigator bar Component -->
+  ${NavBar}
+  <div class="parent">
+    <div class="big-heading">
+
+    </div>
+    <div class="big-heading">
+      
+    </div>
+  </div>
+</div>
+
 <!-- Footer Component -->
 ${Footer}`
 

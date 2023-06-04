@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   position: sticky;
+  position: -webkit-sticky;
   flex-direction: row;
 }
 

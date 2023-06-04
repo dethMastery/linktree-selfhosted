@@ -37,6 +37,15 @@ body {
   transform: scale(.95, .95);
 }
 
+.control-parent {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: sticky;
+  top: 0;
+  overflow: visible;
+}
+
 .parent {
   width: 100%;
   min-height: 100vh;
