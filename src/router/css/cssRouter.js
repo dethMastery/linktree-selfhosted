@@ -5,7 +5,7 @@ function cssRouter(route, root) {
 
   // Components
   route.get('/css/components/footer', (req, res) => {
-    res.sendFile(root + '/styles/components.footer.css')
+    res.sendFile(root + '/styles/components/footer.css')
   })
 
   // Dashboard

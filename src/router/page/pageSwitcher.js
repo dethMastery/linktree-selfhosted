@@ -1,4 +1,4 @@
-const indexComponents = require("../../static");
+const indexComponents = require('../../static/pages/index.js')
 
 function switcher(page) {
   let pageData
@@ -6,10 +6,10 @@ function switcher(page) {
   switch (page) {
     case 'index':
       pageData = indexComponents
-      break;
-  
+      break
+
     default:
-      break;
+      break
   }
 
   return pageData
