@@ -4,6 +4,10 @@ function cssRouter(route, root) {
   })
 
   // Components
+  route.get('/css/components/navbar', (req, res) => {
+    res.sendFile(root + '/styles/components/navBar.css')
+  })
+
   route.get('/css/components/footer', (req, res) => {
     res.sendFile(root + '/styles/components/footer.css')
   })
