@@ -1,6 +1,7 @@
 #navBar {
   width: 100%;
   display: flex;
+  position: sticky;
   flex-direction: row;
 }
 
