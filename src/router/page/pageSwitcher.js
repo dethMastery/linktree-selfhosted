@@ -1,4 +1,5 @@
 const indexComponents = require('../../static/pages/index.js')
+const dashboardComponents = require('../../static/pages/dashboard.js')
 
 function switcher(page) {
   let pageData
@@ -7,6 +8,9 @@ function switcher(page) {
     case 'index':
       pageData = indexComponents
       break
+    
+    case 'dashboard':
+      pageData = dashboardComponents
 
     default:
       break
