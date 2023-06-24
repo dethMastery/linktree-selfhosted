@@ -8,6 +8,10 @@ function cssRouter(route, root) {
     res.sendFile(root + '/styles/pages/index.css')
   })
 
+  route.get('/css/pages/dashboard', (req, res) => {
+    res.sendFile(root + '/styles/pages/dashboard.css')
+  })
+
   // Components
   route.get('/css/components/navbar', (req, res) => {
     res.sendFile(root + '/styles/components/navBar.css')
