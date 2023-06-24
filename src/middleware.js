@@ -5,7 +5,7 @@ function middleware(exp) {
   const app = exp();
 
   app.use(bodyParser.json())
-  app.use(bodyParser.urlEncoded({
+  app.use(bodyParser.urlencoded({
     extended: true
   }))
 
