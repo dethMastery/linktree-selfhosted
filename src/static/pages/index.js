@@ -28,10 +28,10 @@ const body = `<!-- Top Heading -->
 </div>
 
 <!-- Parent Container -->
-<div class="control-parent">
+<!-- <div class="control-parent"> -->
   <!-- Navigator bar Component -->
-  ${NavBar}
-  <div class="parent">
+  <!-- ${NavBar} -->
+  <!-- <div class="parent">
     <div class="big-heading">
 
     </div>
@@ -39,7 +39,7 @@ const body = `<!-- Top Heading -->
       
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Footer Component -->
 ${Footer}`
