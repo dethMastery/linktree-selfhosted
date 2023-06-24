@@ -6,8 +6,10 @@ function staticPage(route, root) {
     res.send(Layout(switcher('index')))
   })
 
-  route.get('/dashboard', (req, res) => {
-    res.send(Layout(switcher('dashboard')))
+  route.get('/:slug', (req, res) => {
+    const slug = req.params.slug
+
+    res.send(Layout(switcher(slug)))
   })
 }
 
