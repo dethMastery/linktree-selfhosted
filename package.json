@@ -4,5 +4,8 @@
   "main": "app.js",
   "repository": "https://github.com/dethMastery/linktree-selfhosted",
   "author": "Suphakit P. <me@suphakit.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2"
+  }
 }
