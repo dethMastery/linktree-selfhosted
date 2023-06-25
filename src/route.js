@@ -4,7 +4,7 @@ async function router(server, root) {
   server.route({
     method: 'GET',
     path: '/',
-    handler: (req, h ) => {
+    handler: (req, h) => {
       return testPage
     }
   })
