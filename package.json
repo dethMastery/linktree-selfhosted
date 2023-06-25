@@ -5,6 +5,10 @@
   "repository": "https://github.com/dethMastery/linktree-selfhosted",
   "author": "Suphakit P. <me@suphakit.net>",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "@hapi/hapi": "^21.3.2"
   }
