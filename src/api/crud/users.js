@@ -1,17 +1,10 @@
-const { PrismaClient } = require('@prisma/client')
 const {tyDon} = require('tydon')
-
-const prisma = new PrismaClient()
 
 async function register(user, pass) {
   try {
     let res
 
-    const findUser = await prisma.user.findUnique({
-      where: {
-        username: user  
-      }
-    })
+    const findUser = null
 
     if (findUser != null) {
       res = {
@@ -24,15 +17,6 @@ async function register(user, pass) {
         status: 200,
         message: 'Your register is complete!'
       }
-
-      await prisma.user.create({
-        data: {
-          username: user,
-          password: pass,
-          date: tyDon().toString(),
-          isAdmin: false
-        }
-      })
 
       return res
     }
