@@ -34,6 +34,10 @@ const trees = new mongoose.Schema({
     require: true,
     type: String,
   },
+  timestamp: {
+    require: true,
+    type: String,
+  },
   links: [links],
 })
 

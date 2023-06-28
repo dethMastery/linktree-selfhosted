@@ -1,5 +1,5 @@
 const testPage = require('./pages/test')
-//const userCRUD = require('./api/crud/users')
+const { createTree } = require('./api/crud/tree')
 
 async function router(server, root) {
   server.route({
@@ -14,7 +14,9 @@ async function router(server, root) {
     method: 'POST',
     path: '/addRoute',
     handler: (req, h) => {
-      return 'a'
+      const payload = req.payload
+
+      return createTree(payload)
     },
   })
 }
