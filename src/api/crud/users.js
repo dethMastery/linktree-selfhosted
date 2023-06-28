@@ -1,4 +1,4 @@
-const {tyDon} = require('tydon')
+const { tyDon } = require('tydon')
 
 async function register(user, pass) {
   try {
@@ -9,23 +9,24 @@ async function register(user, pass) {
     if (findUser != null) {
       res = {
         status: 403,
-        message: 'This username is already on our website. Please Enter other username'
+        message:
+          'This username is already on our website. Please Enter other username',
       }
       return res
     } else {
       res = {
         status: 200,
-        message: 'Your register is complete!'
+        message: 'Your register is complete!',
       }
 
       return res
     }
   } catch (err) {
-    console.log(err);
+    console.log(err)
     return err
   }
 }
 
 module.exports = {
-  register
+  register,
 }
