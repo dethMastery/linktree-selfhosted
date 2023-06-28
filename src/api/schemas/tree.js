@@ -30,6 +30,10 @@ const trees = new mongoose.Schema({
     require: true,
     type: String,
   },
+  author: {
+    require: true,
+    type: String,
+  },
   links: [links],
 })
 
