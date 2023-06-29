@@ -11,13 +11,11 @@
   },
   "dependencies": {
     "@hapi/hapi": "^21.3.2",
-    "@prisma/client": "^4.16.1",
     "dotenv": "^16.3.1",
     "mongoose": "^7.3.1",
     "tydon": "^1.1.0"
   },
   "devDependencies": {
-    "marco": "^0.0.4",
-    "prisma": "^4.16.1"
+    "marco": "^0.0.4"
   }
 }

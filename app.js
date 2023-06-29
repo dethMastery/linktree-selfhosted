@@ -7,17 +7,19 @@ const route = require('./src/route')
 const init = async () => {
   const server = Hapi.server({
     port: 1980,
-    host: 'localhost'
+    host: 'localhost',
   })
+
+  require('./src/api/mongo')
 
   route(server, __dirname)
 
   await server.start()
-  console.log(`Server Start @ ${server.info.uri}`);
+  console.log(`Server Start @ ${server.info.uri}`)
 }
 
 process.on('unhandledRejection', (err) => {
-  console.error(err);
+  console.error(err)
   process.exit(1)
 })
 
